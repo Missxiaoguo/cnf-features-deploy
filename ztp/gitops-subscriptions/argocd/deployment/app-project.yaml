@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: ztp-app-project
+  name: oran-clustertemplates-app
   namespace: openshift-gitops
 spec:
   clusterResourceWhitelist:
@@ -41,5 +41,9 @@ spec:
     kind: SiteConfig
   - group: 'siteconfig.open-cluster-management.io'
     kind: ClusterInstance
+  - group: o2ims.provisioning.oran.org
+    kind: ClusterTemplate
+  - group: o2ims-hardwaremanagement.oran.openshift.io
+    kind: HardwareTemplate
   sourceRepos:
   - '*'

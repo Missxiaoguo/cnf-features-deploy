@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: policy-app-project
+  name: oran-policy-app
   namespace: openshift-gitops
 spec:
   clusterResourceWhitelist:
